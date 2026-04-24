@@ -1,0 +1,283 @@
+<!-- 06 · QUIZZES — Relaciones Humanas · Licencia Tipo E -->
+<div style="font-family:'Segoe UI',Arial,sans-serif;max-width:960px;margin:0 auto;padding-bottom:48px;">
+
+  <!-- HERO -->
+  <div style="background:linear-gradient(135deg,#1a1200,#2d1f00,#3d2b00);padding:44px 40px;border-radius:16px;margin-bottom:28px;display:flex;gap:28px;align-items:center;border:1px solid #92400e;">
+    <div style="flex:1;">
+      <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#fbbf24;font-weight:700;margin:0 0 10px;">⚡ Autoevaluación</p>
+      <h1 style="font-size:44px;font-weight:900;color:#fff;margin:0 0 10px;">Quizzes <span style="color:#fbbf24;">Interactivos</span></h1>
+      <p style="color:rgba(255,255,255,.5);font-size:14px;line-height:1.7;margin:0;">Haz clic en <strong style="color:#fbbf24;">⚡ Iniciar</strong> para cargar las preguntas. ¡Retroalimentación instantánea con cada respuesta!</p>
+    </div>
+    <div style="background:rgba(255,255,255,.08);border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:16px 22px;text-align:center;flex-shrink:0;">
+      <span style="display:block;font-size:44px;font-weight:900;color:#fbbf24;line-height:1;">6</span>
+      <span style="font-size:11px;color:rgba(255,255,255,.4);font-weight:700;text-transform:uppercase;letter-spacing:1px;">Quizzes</span>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;">
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">🚗</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 1 · Fundamentos RRHH</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Conducción, comportamiento, cortesía y origen de las RRHH.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#fffbeb;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#fef3c7;color:#92400e;">5 preguntas</span><button onclick="loadQuiz(1)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#f59e0b;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">💡</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 2 · Paradigmas y Factor Personal</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Paradigmas, madurez, autocontrol y responsabilidad.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#fff7ed;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#ffedd5;color:#7c2d12;">5 preguntas</span><button onclick="loadQuiz(2)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#ea580c;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">⚠️</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 3 · Conductas de Riesgo</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Impulsividad, represión, negación y cómo hacerse valer.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#fef2f2;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#fee2e2;color:#991b1b;">5 preguntas</span><button onclick="loadQuiz(3)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#dc2626;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">🏙️</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 4 · Conductor, Ciudad y Peatón</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Manual de convivencia: ciudad, peatón y normas urbanas.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#fffbeb;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#fef3c7;color:#92400e;">5 preguntas</span><button onclick="loadQuiz(4)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#d97706;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">🚲</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 5 · Ciclistas y Otros Conductores</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Convivencia con ciclistas, otros conductores y peatones.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#f0fdf4;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#dcfce7;color:#14532d;">5 preguntas</span><button onclick="loadQuiz(5)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#16a34a;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+    <div style="background:#fff;border-radius:12px;border:1px solid #e5e7eb;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.05);">
+      <div style="padding:18px 16px;"><div style="font-size:32px;margin-bottom:8px;">🌿</div><h3 style="font-size:13px;font-weight:800;color:#111827;margin:0 0 4px;">Quiz 6 · Medio Ambiente y Comunicación</h3><p style="font-size:11px;color:#6b7280;margin:0;line-height:1.5;">Responsabilidad ambiental, comunicación y vehículos especiales.</p></div>
+      <div style="padding:10px 16px;border-top:1px solid #e5e7eb;background:#fff7ed;display:flex;align-items:center;justify-content:space-between;"><span style="padding:3px 9px;border-radius:100px;font-size:10px;font-weight:700;background:#ffedd5;color:#7c2d12;">5 preguntas</span><button onclick="loadQuiz(6)" style="padding:7px 14px;border-radius:100px;font-size:11px;font-weight:700;border:none;background:#b45309;color:#fff;cursor:pointer;">⚡ Iniciar</button></div>
+    </div>
+
+  </div>
+
+  <!-- ZONA DE PREGUNTAS -->
+  <div id="quizZone" style="display:none;">
+    <div id="quizHeader" style="background:linear-gradient(135deg,#1a1200,#2d1f00);border-radius:12px;padding:16px 22px;margin-bottom:16px;display:flex;align-items:center;gap:12px;border:1px solid #92400e;">
+      <span id="quizEmoji" style="font-size:28px;"></span>
+      <div><p id="quizLabel" style="font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.35);margin:0 0 3px;font-weight:700;"></p><h2 id="quizName" style="font-size:17px;font-weight:800;color:#fff;margin:0;"></h2></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+      <div style="flex:1;height:6px;background:#e5e7eb;border-radius:100px;overflow:hidden;"><div id="qprog" style="height:100%;width:0%;border-radius:100px;transition:width .4s;background:#d97706;"></div></div>
+      <span id="qlab" style="font-size:11px;font-weight:700;color:#6b7280;white-space:nowrap;min-width:36px;text-align:right;"></span>
+    </div>
+    <div id="questionBox" style="background:linear-gradient(135deg,#1a1200,#2d1f00);border-radius:12px;padding:22px 24px;margin-bottom:14px;border:1px solid #92400e;">
+      <p style="font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);margin:0 0 10px;font-weight:700;">Pregunta</p>
+      <p id="qtxt" style="color:#fff;font-size:15px;font-weight:600;line-height:1.7;margin:0;"></p>
+    </div>
+    <div id="qopts" style="display:flex;flex-direction:column;gap:10px;margin-bottom:14px;"></div>
+    <div id="qfb" style="display:none;padding:12px 16px;border-radius:10px;font-size:13px;font-weight:600;line-height:1.65;margin-bottom:14px;"></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;">
+      <button id="btnReset" onclick="resetQ()" style="padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;border:2px solid #e5e7eb;background:transparent;color:#6b7280;cursor:pointer;">🔄 Reintentar</button>
+      <button id="btnNext" onclick="nextQ()" style="padding:8px 18px;border-radius:100px;font-size:12px;font-weight:700;border:none;background:#d97706;color:#fff;cursor:pointer;">Siguiente ➡</button>
+    </div>
+    <div id="qscore" style="display:none;margin-top:18px;text-align:center;padding:28px;border-radius:14px;border:2px solid #fcd34d;background:linear-gradient(135deg,#fffbeb,#fef3c7);">
+      <div id="scoreEmoji" style="font-size:52px;margin-bottom:10px;"></div>
+      <div id="scorenum" style="font-size:54px;font-weight:900;color:#d97706;line-height:1;margin-bottom:8px;"></div>
+      <div id="scorelbl" style="font-size:16px;font-weight:800;color:#92400e;margin-bottom:4px;"></div>
+      <div id="scoresub" style="font-size:13px;color:#78350f;margin-bottom:18px;"></div>
+      <button onclick="resetAll()" style="padding:10px 24px;border-radius:100px;font-size:13px;font-weight:700;border:none;background:#d97706;color:#fff;cursor:pointer;">🔄 Intentar de nuevo</button>
+    </div>
+  </div>
+
+  <div id="quizPlaceholder" style="background:#fff;border-radius:14px;border:2px dashed #e5e7eb;padding:44px;text-align:center;">
+    <div style="font-size:52px;margin-bottom:14px;">👆</div>
+    <h3 style="font-size:17px;font-weight:800;color:#111827;margin:0 0 8px;">Selecciona un Quiz para comenzar</h3>
+    <p style="font-size:13px;color:#94a3b8;margin:0;">Haz clic en <strong style="color:#d97706;">⚡ Iniciar</strong> en cualquiera de los quizzes de arriba.</p>
+  </div>
+
+</div>
+
+<script>
+var QUIZDATA = {
+  1:{name:"Quiz 1 · Fundamentos de las RRHH",label:"LECCIONES 1 Y 2",emoji:"🚗",color:"#f59e0b",
+    qs:[
+      {q:"¿Cuál es la definición más completa de Relaciones Humanas?",
+       opts:["El conjunto de normas de tránsito que todo conductor debe conocer","Todo tipo de interacción entre personas, incluyendo conflictos, esfuerzos cooperativos y relaciones grupales","La relación estrictamente profesional entre un conductor y su empleador","Las normas de cortesía exclusivas del entorno laboral"],
+       ok:1,fb_ok:"✅ ¡Correcto! Las RRHH abarcan toda interacción entre personas: sus conflictos, esfuerzos cooperativos y relaciones grupales. En el contexto vial, definen la calidad del trato hacia usuarios, peatones, ciclistas y el entorno.",fb_err:"❌ Incorrecto. Las RRHH son todo tipo de interacción entre personas: conflictos, cooperación y relaciones grupales. No se limitan al ámbito laboral ni a las normas de tránsito."},
+      {q:"¿Cuál es la base fundamental para el éxito de las Relaciones Humanas?",
+       opts:["Tener autoridad sobre los demás para imponer el orden","La forma amable y educada con que tratamos a las personas, ya que quien habla con respeto abre caminos de éxito","Evitar cualquier tipo de contacto o comunicación con los demás actores viales","Conocer perfectamente todas las normas de tránsito y aplicarlas de forma estricta"],
+       ok:1,fb_ok:"✅ ¡Correcto! La forma amable y educada es el fundamento de las RRHH exitosas. Quien habla con respeto no ofende, sino que abre caminos de éxito, convivencia y confianza.",fb_err:"❌ Incorrecto. La base de las RRHH es el trato amable y respetuoso. No tiene que ver con autoridad ni con evitar el contacto, sino con la calidad de la interacción."},
+      {q:"¿Qué significa que los 'buenos amigos siempre trajeron buenos negocios' en el contexto del conductor profesional?",
+       opts:["Que el conductor debe mezclar su vida personal con la profesional en todo momento","Que las buenas relaciones interpersonales generan oportunidades de crecimiento laboral y personal","Que solo debe relacionarse con personas de su mismo nivel socioeconómico","Que las amistades en el trabajo siempre son perjudiciales para la productividad"],
+       ok:1,fb_ok:"✅ ¡Correcto! Las buenas relaciones generan confianza, respeto mutuo y oportunidades de crecimiento. Un conductor con buenas RRHH construye una reputación profesional sólida.",fb_err:"❌ Incorrecto. La frase indica que las buenas relaciones interpersonales generan oportunidades reales de crecimiento laboral y personal, no que se deba mezclar lo personal con lo profesional."},
+      {q:"Cuando hablamos de 'conducción y comportamiento' como conductor profesional Tipo E, ¿cuál es el objetivo principal?",
+       opts:["Maximizar la velocidad de entrega para cumplir los tiempos acordados","Identificar y minimizar los factores negativos que impiden las buenas relaciones humanas para generar relaciones satisfactorias","Demostrar superioridad técnica frente a otros conductores en la vía","Evitar cualquier tipo de interacción con otros usuarios de la vía por razones de seguridad"],
+       ok:1,fb_ok:"✅ ¡Correcto! El objetivo es identificar y minimizar los factores negativos que deterioran las relaciones, para generar relaciones satisfactorias con los demás actores del entorno vial.",fb_err:"❌ Incorrecto. El objetivo de trabajar conducción y comportamiento es minimizar los factores negativos para construir relaciones satisfactorias, no maximizar velocidad ni evitar interacciones."},
+      {q:"¿Cuál de estas actitudes corresponde a una buena aplicación de normas de cortesía en el contexto del conductor profesional?",
+       opts:["Usar el claxon repetidamente para exigir paso en un embotellamiento","Ceder el paso a un peatón aunque el semáforo esté en verde para el conductor, cuando hay riesgo real","Ignorar por completo a otros conductores para evitar conflictos","Conducir siempre por el carril de adelantamiento para llegar más rápido"],
+       ok:1,fb_ok:"✅ ¡Correcto! Ceder el paso cuando hay riesgo real para el peatón es una norma de cortesía y responsabilidad que va más allá del cumplimiento estricto de la señal. Refleja madurez y respeto.",fb_err:"❌ Incorrecto. La cortesía en conducción implica ceder paso cuando hay riesgo real, no usar el claxon agresivamente ni ignorar a los demás actores viales."}
+    ]
+  },
+  2:{name:"Quiz 2 · Paradigmas y Factor Personal",label:"LECCIONES 3 Y 4",emoji:"💡",color:"#ea580c",
+    qs:[
+      {q:"¿Qué es un paradigma en el contexto de las Relaciones Humanas?",
+       opts:["Un reglamento oficial establecido por las autoridades de tránsito","Un modelo mental, creencia o esquema que condiciona la forma en que percibimos y actuamos ante situaciones","Una norma de cortesía obligatoria en el entorno vial","Un tipo de conflicto interpersonal entre conductores de diferente categoría"],
+       ok:1,fb_ok:"✅ ¡Correcto! Un paradigma es un modelo mental o esquema que condiciona cómo percibimos la realidad y actuamos. En la conducción, los paradigmas negativos pueden generar comportamientos de riesgo y conflicto.",fb_err:"❌ Incorrecto. Un paradigma es un modelo mental o creencia que condiciona nuestra percepción y comportamiento. No es una norma oficial ni un tipo de conflicto."},
+      {q:"¿Cuál de los siguientes es un ejemplo de 'romper un paradigma' positivamente como conductor?",
+       opts:["Seguir creyendo que el ciclista siempre tiene la culpa de los accidentes","Cambiar la creencia de que el peatón debe esperar siempre al conductor, reconociendo sus derechos en la vía","Mantener la idea de que la velocidad siempre es más eficiente que la precaución","Seguir ignorando las señales de tránsito porque 'siempre lo he hecho así'"],
+       ok:1,fb_ok:"✅ ¡Correcto! Romper el paradigma de que el conductor tiene siempre prioridad absoluta, y reconocer los derechos del peatón en la vía, es un cambio positivo que mejora la convivencia y reduce accidentes.",fb_err:"❌ Incorrecto. Romper un paradigma positivamente implica cuestionar creencias que generan conflicto y adoptar actitudes que mejoren la convivencia, como reconocer los derechos del peatón."},
+      {q:"¿Cuál de los siguientes factores de madurez es CLAVE para un conductor profesional en situaciones de estrés vial?",
+       opts:["La impulsividad: actuar de forma rápida e instintiva ante cualquier situación","El autocontrol: gestionar las propias emociones para responder de forma reflexiva y no reactiva","La represión: guardar todas las emociones negativas sin expresarlas nunca","La negación: ignorar los problemas viales esperando que se resuelvan solos"],
+       ok:1,fb_ok:"✅ ¡Correcto! El autocontrol es el factor clave. Permite al conductor gestionar sus emociones (ira, frustración, ansiedad) y responder de forma reflexiva y segura ante situaciones difíciles en la vía.",fb_err:"❌ Incorrecto. El autocontrol es el factor clave de madurez. La impulsividad, represión y negación son conductas problemáticas que generan riesgo, no madurez."},
+      {q:"La 'adaptabilidad' como factor de madurez en un conductor profesional significa:",
+       opts:["Adaptarse a las exigencias de velocidad del mercado aunque implique riesgo","Ajustar el comportamiento y las respuestas a las diferentes circunstancias viales, climas y tipos de usuarios","Adaptarse siempre a las normas de los demás conductores aunque sean incorrectas","Mantener el mismo estilo de conducción independientemente de las condiciones de la vía"],
+       ok:1,fb_ok:"✅ ¡Correcto! La adaptabilidad es ajustar el comportamiento a cada circunstancia: clima adverso, tráfico denso, usuarios vulnerables o rutas desconocidas. Es un signo de madurez profesional.",fb_err:"❌ Incorrecto. Adaptabilidad es ajustar el comportamiento a cada circunstancia vial de forma inteligente y segura, no adaptarse a conductas incorrectas de otros."},
+      {q:"¿Qué implica la 'responsabilidad' como factor personal del conductor profesional Tipo E?",
+       opts:["Culpar a los otros conductores cuando ocurre un accidente para protegerse legalmente","Asumir las consecuencias de las propias acciones al volante y actuar de forma preventiva y consciente","Delegar en la empresa las decisiones sobre los tiempos de entrega y las condiciones de conducción","Responsabilizar siempre al peatón o ciclista por los incidentes en la vía"],
+       ok:1,fb_ok:"✅ ¡Correcto! La responsabilidad implica asumir las consecuencias de las propias acciones, conducir de forma preventiva y consciente, y no trasladar la culpa a otros cuando algo sale mal.",fb_err:"❌ Incorrecto. Responsabilidad es asumir las propias acciones y conducir de forma preventiva. Culpar a otros o delegar decisiones de seguridad no es responsabilidad."}
+    ]
+  },
+  3:{name:"Quiz 3 · Conductas que Implican Riesgos",label:"LECCIÓN 5",emoji:"⚠️",color:"#dc2626",
+    qs:[
+      {q:"¿Qué es una conducta impulsiva en el contexto vial?",
+       opts:["Planificar con anticipación cada maniobra antes de ejecutarla","Reaccionar de forma inmediata y sin reflexión ante una situación, guiado por la emoción del momento","Ceder el paso a otros conductores en situaciones de duda","Revisar los espejos antes de cambiar de carril"],
+       ok:1,fb_ok:"✅ ¡Correcto! La conducta impulsiva implica reaccionar sin reflexionar, guiado por la emoción (ira, impaciencia, miedo). En la vía, esto puede provocar maniobras peligrosas, accidentes y conflictos.",fb_err:"❌ Incorrecto. La impulsividad es reaccionar sin reflexión guiado por la emoción. Planificar, ceder paso y revisar espejos son conductas prudentes, lo opuesto a la impulsividad."},
+      {q:"La conducta de 'represión' en un conductor se manifiesta cuando:",
+       opts:["Expresa claramente y con respeto su incomodidad ante una situación injusta en la vía","Acumula emociones negativas (frustración, ira) sin expresarlas, hasta que estallan de forma descontrolada","Toma decisiones calmadas y meditadas en situaciones de conflicto","Cede siempre el paso a otros conductores para evitar cualquier confrontación"],
+       ok:1,fb_ok:"✅ ¡Correcto! La represión implica acumular emociones sin expresarlas. Con el tiempo esto puede provocar reacciones descontroladas y explosivas al volante, que son altamente peligrosas.",fb_err:"❌ Incorrecto. La represión es acumular emociones sin expresarlas hasta que estallan. Expresar incomodidad con respeto y tomar decisiones calmadas son conductas saludables, no represión."},
+      {q:"¿Cuál de las siguientes es una estrategia saludable para 'hacerse valer' en la vía sin generar riesgo?",
+       opts:["Tocar el claxon repetidamente y hacer gestos amenazantes al conductor que no respeta el carril","Comunicar de forma clara, respetuosa y sin agresión cuando otro conductor hace algo incorrecto, luego soltar el incidente","Acelerar bruscamente para demostrar que no se acepta el comportamiento del otro conductor","Detener el vehículo en medio de la vía para confrontar al otro conductor"],
+       ok:1,fb_ok:"✅ ¡Correcto! Hacerse valer de forma asertiva implica comunicar con claridad y respeto cuando algo está mal, sin agresión física ni verbal, y luego soltar el incidente sin escalar el conflicto.",fb_err:"❌ Incorrecto. Hacerse valer asertivamente es comunicar con respeto y sin agresión. El claxon repetitivo, la aceleración brusca y confrontar en la vía son conductas de riesgo."},
+      {q:"¿Por qué las conductas de riesgo son especialmente peligrosas en el conductor Tipo E (vehículos pesados)?",
+       opts:["Porque los vehículos pesados tienen más velocidad que los vehículos particulares","Porque la masa y la inercia del vehículo pesado amplifican las consecuencias de cualquier error o reacción impulsiva","Porque el conductor Tipo E tiene más responsabilidad legal que otros conductores","Porque los vehículos pesados tienen sistemas de freno menos eficientes que los livianos"],
+       ok:1,fb_ok:"✅ ¡Correcto! La masa y la inercia de un vehículo pesado hacen que cualquier error de conducción o reacción impulsiva tenga consecuencias mucho mayores. Por eso el autocontrol es especialmente crítico en el Tipo E.",fb_err:"❌ Incorrecto. El factor clave es la masa e inercia: un vehículo pesado amplifican enormemente las consecuencias de cualquier error. No se trata de velocidad ni de diferencias en sistemas de freno."},
+      {q:"La conducta de 'negación' ante una situación de riesgo vial implica:",
+       opts:["Reconocer el peligro y actuar de forma inmediata para neutralizarlo","Ignorar o minimizar la existencia del problema esperando que se resuelva solo, sin tomar acción","Comunicar el riesgo a las autoridades competentes para que actúen","Hacer una pausa antes de continuar para analizar el peligro detectado"],
+       ok:1,fb_ok:"✅ ¡Correcto! La negación es ignorar o minimizar el peligro sin actuar. En la vía esto puede significar ignorar señales de cansancio, falla mecánica o riesgo climático, con consecuencias graves.",fb_err:"❌ Incorrecto. La negación es ignorar el problema sin actuar. Reconocer, comunicar y hacer pausa son conductas responsables y opuestas a la negación."}
+    ]
+  },
+  4:{name:"Quiz 4 · Conductor, Ciudad y Peatón",label:"LECCIÓN 6",emoji:"🏙️",color:"#d97706",
+    qs:[
+      {q:"¿Cuál es la norma más importante del conductor en el entorno urbano respecto al peatón?",
+       opts:["El conductor siempre tiene prioridad sobre el peatón en intersecciones sin señalización","El conductor debe respetar siempre los pasos peatonales y ceder el paso, especialmente a niños, adultos mayores y personas con discapacidad","El peatón debe esperar siempre a que el conductor pase antes de cruzar","El conductor puede ignorar el paso peatonal si no hay policía presente"],
+       ok:1,fb_ok:"✅ ¡Correcto! El paso peatonal es un derecho del peatón. El conductor SIEMPRE debe respetar los cruces y ceder el paso, especialmente a grupos vulnerables. Esto no es opcional, es una obligación ética y legal.",fb_err:"❌ Incorrecto. El conductor SIEMPRE debe respetar los pasos peatonales y ceder el paso. El peatón tiene derecho prioritario en los cruces señalizados."},
+      {q:"¿Qué comportamiento debe tener el conductor al pasar cerca de una parada de bus con pasajeros bajando?",
+       opts:["Acelerar para pasar rápido antes de que los pasajeros crucen la calzada","Reducir la velocidad, estar alerta y dar espacio suficiente a los pasajeros que bajan y pueden cruzar de forma imprevista","Tocar el claxon para advertir a los pasajeros que el vehículo se aproxima","Cambiar de carril bruscamente para alejarse de la parada"],
+       ok:1,fb_ok:"✅ ¡Correcto! Al acercarse a una parada de bus, el conductor debe reducir velocidad y estar muy alerta, ya que los pasajeros pueden cruzar de forma imprevista. La anticipación salva vidas.",fb_err:"❌ Incorrecto. Hay que reducir velocidad y estar alerta. Acelerar, tocar el claxon o cambiar de carril bruscamente aumenta el riesgo de atropello."},
+      {q:"En el manual conductor-ciudad, ¿cómo debe actuar el conductor ante un semáforo en amarillo?",
+       opts:["Acelerar para atravesar la intersección antes de que cambie a rojo","Reducir la velocidad y prepararse para detenerse, ya que el amarillo indica precaución y próximo cambio a rojo","Ignorarlo si no hay peatones ni policías en la intersección","Tocar el claxon para advertir a los peatones que puede seguir circulando"],
+       ok:1,fb_ok:"✅ ¡Correcto! El amarillo indica precaución y preparación para detenerse. Acelerar ante el amarillo es una de las causas más frecuentes de accidentes en intersecciones urbanas.",fb_err:"❌ Incorrecto. El semáforo amarillo es señal de precaución: hay que reducir velocidad y prepararse para detenerse, no acelerar para atravesar."},
+      {q:"¿Cuál es la actitud correcta del conductor cuando un peatón cruza fuera del paso peatonal?",
+       opts:["Tocar el claxon fuerte y continuar sin reducir velocidad, ya que el peatón está en falta","Reducir la velocidad y ceder el paso igualmente, ya que la seguridad del peatón es prioritaria sobre la norma","Acelerar para presionar al peatón a que cruce más rápido","Ignorarlo completamente y mantener la velocidad"],
+       ok:1,fb_ok:"✅ ¡Correcto! Aunque el peatón esté cruzando incorrectamente, la seguridad humana es siempre prioritaria. El conductor debe reducir velocidad. El conductor es quien maneja la máquina más peligrosa.",fb_err:"❌ Incorrecto. Aunque el peatón esté en falta, la seguridad humana es prioritaria. El conductor debe reducir velocidad y ceder el paso, nunca acelerar o presionar."},
+      {q:"¿Qué debe hacer el conductor si un adulto mayor pide ayuda para cruzar la calle?",
+       opts:["Ignorarlo ya que el conductor tiene obligaciones de tiempo que cumplir","Detenerse, ceder el paso y si es posible ayudarlo activamente, ya que el respeto a los grupos vulnerables es una norma fundamental de convivencia","Tocar el claxon para alertar a otros conductores y seguir su marcha","Esperar en el vehículo a que el adulto mayor cruce solo sin intervenir"],
+       ok:1,fb_ok:"✅ ¡Correcto! El respeto y la asistencia a grupos vulnerables (adultos mayores, niños, personas con discapacidad) es una obligación ética del conductor profesional y una norma básica de convivencia.",fb_err:"❌ Incorrecto. El conductor debe detenerse y ayudar. El respeto a los grupos vulnerables no es opcional, es una norma fundamental de convivencia y responsabilidad social."}
+    ]
+  },
+  5:{name:"Quiz 5 · Ciclistas y Otros Conductores",label:"LECCIONES 7, 8, 10 Y 11",emoji:"🚲",color:"#16a34a",
+    qs:[
+      {q:"¿Cuál es la distancia lateral mínima recomendada al adelantar a un ciclista en carretera?",
+       opts:["0.5 metros, ya que el ciclista ocupa poco espacio","Al menos 1.5 metros de separación lateral para garantizar la seguridad del ciclista ante movimientos imprevistos","No importa la distancia si el conductor adelanta rápidamente","El conductor puede adelantar al ciclista sin distancia específica si no hay tráfico en sentido contrario"],
+       ok:1,fb_ok:"✅ ¡Correcto! La distancia mínima recomendada es de 1.5 metros al adelantar a un ciclista. Los ciclistas pueden hacer movimientos laterales imprevistos para esquivar baches u obstáculos.",fb_err:"❌ Incorrecto. La distancia lateral mínima al adelantar a un ciclista es de 1.5 metros. Adelantar sin esta distancia pone en riesgo la vida del ciclista."},
+      {q:"Cuando un conductor y un ciclista comparten una vía estrecha sin carril exclusivo, ¿cuál es la norma de convivencia correcta?",
+       opts:["El conductor debe presionar al ciclista con el claxon para que se aparte y deje pasar al vehículo","El conductor debe reducir la velocidad, esperar el momento seguro para adelantar con suficiente separación y no presionar al ciclista","El ciclista debe bajarse de la bicicleta y ceder el paso siempre al vehículo","El conductor puede adelantar en cualquier momento ya que el vehículo tiene prioridad sobre la bicicleta"],
+       ok:1,fb_ok:"✅ ¡Correcto! En vías estrechas, el conductor debe reducir velocidad y esperar el momento seguro para adelantar con suficiente separación. La prisa nunca justifica poner en riesgo al ciclista.",fb_err:"❌ Incorrecto. El conductor debe reducir velocidad y esperar el momento seguro. Presionar con el claxon o adelantar sin separación suficiente son conductas de riesgo para el ciclista."},
+      {q:"¿Cuál es la norma de convivencia más importante entre conductores profesionales en carretera?",
+       opts:["El conductor más rápido siempre tiene prioridad de paso sobre el más lento","Comunicarse mediante las luces y señales del vehículo de forma clara y oportuna, respetando los espacios de los demás","Usar el carril de adelantamiento como carril de circulación habitual para ahorrar tiempo","Ignorar las señales de otros conductores para no distraerse del camino"],
+       ok:1,fb_ok:"✅ ¡Correcto! La comunicación clara y respetuosa entre conductores mediante señales de luz, intermitentes y gestos es la norma fundamental de convivencia en carretera. Previene accidentes y reduce conflictos.",fb_err:"❌ Incorrecto. La norma más importante es comunicarse con claridad y respeto usando las señales del vehículo. No existe prioridad por velocidad ni se debe ignorar las señales de otros."},
+      {q:"¿Qué actitud debe tener el conductor Tipo E frente a un conductor particular que lo obstruye en autopista?",
+       opts:["Presionarlo con el claxon y las luces largas para que ceda el paso inmediatamente","Mantener la calma, mantener la distancia de seguridad y esperar una oportunidad segura para adelantar sin presionar","Adelantar por la derecha si el carril izquierdo está ocupado por el conductor que obstruye","Frenar bruscamente para que el conductor de atrás advierta el problema"],
+       ok:1,fb_ok:"✅ ¡Correcto! Mantener la calma y la distancia de seguridad es la respuesta correcta. El conductor Tipo E tiene una responsabilidad especial por la masa de su vehículo: presionar o frenar bruscamente son conductas muy peligrosas.",fb_err:"❌ Incorrecto. La respuesta correcta es mantener calma y distancia. Presionar con claxon y luces, adelantar por la derecha o frenar bruscamente son conductas de alto riesgo en vehículo pesado."},
+      {q:"Desde la perspectiva del ciclista, ¿cuál es la mayor queja hacia los conductores en la vía?",
+       opts:["Que los conductores siempre respetan demasiado al ciclista y esto retrasa el tráfico","Que los conductores no respetan el espacio lateral del ciclista y lo presionan con el claxon y acercamientos peligrosos","Que los ciclistas prefieren compartir el carril central con los vehículos","Que los conductores se detienen demasiado en los pasos peatonales"],
+       ok:1,fb_ok:"✅ ¡Correcto! La queja más común del ciclista es la falta de respeto al espacio lateral y el uso agresivo del claxon. Entender esta perspectiva ayuda al conductor a mejorar su convivencia con los ciclistas.",fb_err:"❌ Incorrecto. La queja más frecuente del ciclista es precisamente que los conductores no respetan su espacio lateral y los presionan con acercamientos y claxon agresivo."}
+    ]
+  },
+  6:{name:"Quiz 6 · Medio Ambiente y Comunicación",label:"LECCIONES 9 Y 12",emoji:"🌿",color:"#b45309",
+    qs:[
+      {q:"¿Cuál de las siguientes prácticas de conducción reduce directamente el impacto ambiental del vehículo pesado?",
+       opts:["Conducir siempre a la velocidad máxima permitida para reducir el tiempo en carretera","Mantener el motor al ralentí durante las paradas largas para tener el vehículo listo","Mantener una velocidad constante y moderada, evitar aceleraciones bruscas y apagar el motor en paradas largas","Usar el freno motor lo menos posible para no desgastar los frenos"],
+       ok:2,fb_ok:"✅ ¡Correcto! La conducción a velocidad constante y moderada, evitar aceleraciones bruscas y apagar el motor en paradas largas reduce significativamente el consumo de combustible y las emisiones contaminantes.",fb_err:"❌ Incorrecto. Las prácticas que reducen el impacto ambiental son: velocidad constante y moderada, sin aceleraciones bruscas y motor apagado en paradas. Dejar el motor al ralentí consume combustible y contamina innecesariamente."},
+      {q:"¿Qué responsabilidad tiene el conductor Tipo E con el medio ambiente al circular por zonas urbanas?",
+       opts:["Ninguna, ya que la responsabilidad ambiental es exclusiva de las empresas propietarias del vehículo","Minimizar el ruido, las emisiones y el impacto visual del vehículo pesado en el entorno urbano mediante buenas prácticas de conducción","Circular únicamente por zonas habilitadas para vehículos pesados sin importar las emisiones","Aumentar la velocidad para reducir el tiempo de exposición del vehículo en zonas urbanas"],
+       ok:1,fb_ok:"✅ ¡Correcto! El conductor Tipo E tiene responsabilidad directa en minimizar el ruido, las emisiones y el impacto visual del vehículo pesado en zonas urbanas. La responsabilidad ambiental es individual y profesional.",fb_err:"❌ Incorrecto. El conductor tiene responsabilidad personal directa: minimizar ruido, emisiones e impacto visual en el entorno urbano. La responsabilidad ambiental no es solo de la empresa."},
+      {q:"¿Cuál es la principal barrera de comunicación que puede existir entre un conductor y un peatón?",
+       opts:["La diferencia de velocidad entre el vehículo y el peatón hace imposible cualquier comunicación","Los gestos ambiguos o malinterpretados (ej: una señal de 'pase' que el peatón interpreta como 'espere') pueden generar accidentes","El peatón siempre entiende correctamente las señales del conductor","La única comunicación válida en la vía son las señales de tránsito oficiales"],
+       ok:1,fb_ok:"✅ ¡Correcto! Los gestos ambiguos son una barrera peligrosa de comunicación. Un conductor que hace señas poco claras puede provocar que el peatón actúe de forma contraria a lo esperado, generando accidentes.",fb_err:"❌ Incorrecto. La principal barrera es la comunicación ambigua mediante gestos que pueden malinterpretarse. La comunicación clara y sin ambigüedad es esencial en la convivencia vial."},
+      {q:"¿Cómo debe actuar el conductor Tipo E al encontrarse con maquinaria agrícola o vehículos especiales en carretera?",
+       opts:["Presionarlos con el claxon para que cedan el paso al ser vehículos más lentos","Adelantarlos por cualquier lugar disponible para no perder tiempo","Reducir la velocidad, aumentar la distancia de seguridad y esperar el momento adecuado y seguro para adelantar","Ignorarlos y mantener la velocidad habitual ya que tienen obligación de ceder el paso"],
+       ok:2,fb_ok:"✅ ¡Correcto! Ante maquinaria agrícola o vehículos especiales, el conductor debe reducir velocidad, aumentar la distancia de seguridad y esperar el momento seguro. Estos vehículos tienen características especiales de manejo.",fb_err:"❌ Incorrecto. La conducta correcta es reducir velocidad y aumentar la distancia de seguridad. Presionarlos, adelantarlos en lugares inadecuados o ignorarlos son conductas de riesgo."},
+      {q:"La comunicación no verbal entre conductores en la vía (luces, intermitentes, gestos) debe ser:",
+       opts:["Rápida y agresiva para que el mensaje sea entendido de inmediato","Clara, oportuna y sin ambigüedades, evitando gestos que puedan interpretarse como agresivos o confusos","Innecesaria, ya que las señales de tránsito oficiales son suficientes para toda comunicación vial","Exclusiva de situaciones de emergencia, no para la conducción cotidiana"],
+       ok:1,fb_ok:"✅ ¡Correcto! La comunicación no verbal entre conductores debe ser clara, oportuna y sin ambigüedades. Un gesto agresivo o una señal confusa puede escalar un conflicto o generar un accidente.",fb_err:"❌ Incorrecto. La comunicación no verbal debe ser clara y sin ambigüedades, nunca agresiva. Es necesaria en la conducción cotidiana, no solo en emergencias."}
+    ]
+  }
+};
+
+var cur=0,score=0,answered=false,activeQuiz=null;
+var letters=['A','B','C','D'];
+
+function loadQuiz(num){
+  activeQuiz=QUIZDATA[num];cur=0;score=0;answered=false;
+  document.getElementById('quizPlaceholder').style.display='none';
+  document.getElementById('quizZone').style.display='block';
+  document.getElementById('qscore').style.display='none';
+  document.getElementById('qopts').style.display='flex';
+  document.getElementById('questionBox').style.display='block';
+  document.getElementById('qfb').style.display='none';
+  document.getElementById('btnReset').style.display='inline-flex';
+  document.getElementById('btnNext').style.display='inline-flex';
+  document.getElementById('quizEmoji').textContent=activeQuiz.emoji;
+  document.getElementById('quizLabel').textContent=activeQuiz.label;
+  document.getElementById('quizName').textContent=activeQuiz.name;
+  document.getElementById('qprog').style.background=activeQuiz.color;
+  document.getElementById('btnNext').style.background=activeQuiz.color;
+  document.getElementById('quizZone').scrollIntoView({behavior:'smooth',block:'start'});
+  render();
+}
+
+function render(){
+  var d=activeQuiz.qs[cur];
+  document.getElementById('qtxt').textContent=d.q;
+  document.getElementById('qprog').style.width=((cur+1)/activeQuiz.qs.length*100)+'%';
+  document.getElementById('qlab').textContent=(cur+1)+'/'+activeQuiz.qs.length;
+  var html='';
+  for(var i=0;i<d.opts.length;i++){
+    html+='<div id="opt'+i+'" onclick="checkAns('+i+','+(i===d.ok?'true':'false')+')" style="padding:11px 14px;border-radius:10px;border:2px solid #e5e7eb;background:#fff;cursor:pointer;font-size:13px;font-weight:600;color:#111827;display:flex;align-items:center;gap:12px;">';
+    html+='<span style="width:26px;height:26px;border-radius:7px;background:#f3f4f6;display:inline-flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;flex-shrink:0;">'+letters[i]+'</span>';
+    html+=d.opts[i]+'</div>';
+  }
+  document.getElementById('qopts').innerHTML=html;
+  document.getElementById('qfb').style.display='none';
+  answered=false;
+}
+
+function checkAns(i,correct){
+  if(answered)return;
+  answered=true;
+  var d=activeQuiz.qs[cur];
+  for(var j=0;j<d.opts.length;j++){var el=document.getElementById('opt'+j);if(el)el.style.pointerEvents='none';}
+  var chosen=document.getElementById('opt'+i);
+  var fb=document.getElementById('qfb');
+  if(correct){
+    score++;
+    chosen.style.borderColor='#16a34a';chosen.style.background='#dcfce7';chosen.style.color='#15803d';
+    var lk=chosen.querySelector('span');if(lk){lk.style.background='#16a34a';lk.style.color='#fff';}
+    fb.style.background='#dcfce7';fb.style.border='1px solid #86efac';fb.style.color='#15803d';fb.textContent=d.fb_ok;
+  }else{
+    chosen.style.borderColor='#dc2626';chosen.style.background='#fef2f2';chosen.style.color='#dc2626';
+    var lw=chosen.querySelector('span');if(lw){lw.style.background='#dc2626';lw.style.color='#fff';}
+    var co=document.getElementById('opt'+d.ok);
+    if(co){co.style.borderColor='#16a34a';co.style.background='#dcfce7';co.style.color='#15803d';var lk2=co.querySelector('span');if(lk2){lk2.style.background='#16a34a';lk2.style.color='#fff';}}
+    fb.style.background='#fef2f2';fb.style.border='1px solid #fca5a5';fb.style.color='#dc2626';fb.textContent=d.fb_err;
+  }
+  fb.style.display='block';
+}
+
+function nextQ(){cur++;if(cur>=activeQuiz.qs.length){showScore();}else{render();}}
+function showScore(){
+  document.getElementById('qopts').style.display='none';
+  document.getElementById('questionBox').style.display='none';
+  document.getElementById('qfb').style.display='none';
+  document.getElementById('btnReset').style.display='none';
+  document.getElementById('btnNext').style.display='none';
+  var pct=Math.round((score/activeQuiz.qs.length)*100);
+  document.getElementById('scoreEmoji').textContent=pct>=80?'🏆':pct>=60?'👍':'📖';
+  document.getElementById('scorenum').textContent=score+'/'+activeQuiz.qs.length;
+  document.getElementById('scorelbl').textContent=pct>=80?'¡Excelente!':pct>=60?'¡Buen intento!':'Sigue practicando';
+  document.getElementById('scoresub').textContent='Respondiste '+score+' de '+activeQuiz.qs.length+' correctamente ('+pct+'%).';
+  document.getElementById('qscore').style.display='block';
+}
+function resetQ(){render();}
+function resetAll(){cur=0;score=0;document.getElementById('qscore').style.display='none';document.getElementById('qopts').style.display='flex';document.getElementById('questionBox').style.display='block';document.getElementById('btnReset').style.display='inline-flex';document.getElementById('btnNext').style.display='inline-flex';render();}
+</script>
